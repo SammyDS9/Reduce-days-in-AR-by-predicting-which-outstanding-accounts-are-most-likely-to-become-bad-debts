@@ -1,11 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # Objective: Reduce days in AR by predicting which outstanding accounts are most likely to become bad debts.
 # Approach: Implement a machine learning model to analyze account characteristics and payment history to prioritize AR follow-up. This allows for more efficient allocation of resources toward accounts that are most at risk
-
-# In[1]:
-
 
 import pandas as pd
 import numpy as np
@@ -47,11 +41,7 @@ def classify_risk(row):
 
 # Apply the function to each row
 df['Risk_of_Bad_Debt'] = df.apply(classify_risk, axis=1)
-
 df.head()
-
-
-# In[2]:
 
 
 from sklearn.model_selection import train_test_split
@@ -95,10 +85,6 @@ X_train = preprocessor.fit_transform(X_train)
 X_test = preprocessor.transform(X_test)
 
 X_train.shape, X_test.shape
-
-
-# In[3]:
-
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix
@@ -145,7 +131,7 @@ metrics, conf_matrix
 
 # #Further im interested in looking at visuals of my input and output metrics
 
-# In[4]:
+
 
 
 import matplotlib.pyplot as plt
@@ -210,13 +196,11 @@ plt.show()
 df.head(), conf_matrix
 
 
-# In[8]:
+
 
 
 df['Predictions'] = np.concatenate((train_preds, test_preds), axis=0)
 
-
-# In[6]:
 
 
 import seaborn as sns
@@ -232,8 +216,6 @@ sns.countplot(x='Income_Level', data=df)
 plt.title('Count of Different Income Levels')
 plt.show()
 
-
-# In[10]:
 
 
 from sklearn.metrics import plot_confusion_matrix, roc_curve, auc
@@ -259,7 +241,6 @@ plt.legend(loc="lower right")
 plt.show()
 
 
-# In[ ]:
 
 
 
