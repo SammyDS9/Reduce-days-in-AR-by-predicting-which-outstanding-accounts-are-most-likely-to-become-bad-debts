@@ -7,5 +7,6 @@ Implement a machine learning model to analyze account characteristics and paymen
 ![image](https://github.com/SammyDS9/Reduce-days-in-AR-by-predicting-which-outstanding-accounts-are-most-likely-to-become-bad-debts/assets/116521537/ae21491a-9c6f-4a2d-9a11-31fb4df5c401)
 
 ![image](https://github.com/SammyDS9/Reduce-days-in-AR-by-predicting-which-outstanding-accounts-are-most-likely-to-become-bad-debts/assets/116521537/f4ecef6f-d024-4bb4-961f-6bec9c460585)
+![image](https://github.com/SammyDS9/Reduce-days-in-AR-by-predicting-which-outstanding-accounts-are-most-likely-to-become-bad-debts/assets/116521537/6ca9fef3-4b70-411c-8c77-7e8aeea9e079)
 
 
